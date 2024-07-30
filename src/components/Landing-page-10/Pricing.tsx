@@ -46,7 +46,7 @@ export default function Pricing() {
                     <FaArrowRight className="flex justify-center text-center items-center mt-1.5 ml-2" />
                   </div>
                 </div>
-                <div className="flex flex-col md:w-2/4 md:pl-3 p-5">
+                <div className="flex flex-col md:w-3/4 md:pl-3 p-5">
                   {plan.features.map((feat) => (
                     <div
                       key={feat}
