@@ -35,13 +35,13 @@ export default function Pricing() {
                   <h3 className="md:ml-[50px] text-center text-lg font-semibold text-[#FCF9F7]">
                     {plan.title}
                   </h3>
-                  <div className="flex flex-col items-center md:items-start mt-4 font-semibold">
+                  <div className="flex flex-col items-center md:items-start mt-4 font-semibold font-inter">
                     <span className="text-5xl font-semibold">
                       {plan.price}
                       <span className="text-[grey]">/mo</span>
                     </span>
                   </div>
-                  <div className="flex bg-[gray] md:w-100 tracking-[-0.50px] md:ml-[20px] w-fit px-4 py-2 rounded-lg mt-5 p-6 cursor-pointer">
+                  <div className="flex bg-gray-500 md:w-100 tracking-[-0.50px] md:ml-[20px] w-fit px-4 py-2 rounded-lg mt-5 p-6 cursor-pointer">
                     Buy Now
                     <FaArrowRight className="flex justify-center text-center items-center mt-1.5 ml-2" />
                   </div>
@@ -51,6 +51,15 @@ export default function Pricing() {
                     <div
                       key={feat}
                       className="flex items-start gap-2 text-start pt-2"
+                    >
+                      <Image src={tick} width={20} height={20} alt="icon" />
+                      <span>{feat}</span>
+                    </div>
+                  ))}
+                  {(plan.features1 || []).map((feat) => (
+                    <div
+                      key={feat}
+                      className="flex items-start gap-2 text-start pt-2 text-gray-600"
                     >
                       <Image src={tick} width={20} height={20} alt="icon" />
                       <span>{feat}</span>
