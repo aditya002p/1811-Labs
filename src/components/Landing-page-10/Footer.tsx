@@ -2,7 +2,6 @@ import Button from "./Button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
-import image from "@/assets/img_footer_logo.png";
 import { Inter } from "next/font/google";
 
 const options = {
@@ -30,7 +29,7 @@ export default function Footer() {
       <div className="flex flex-col md:gap-16 gap-8">
         <div className="flex flex-col md:flex-row gap-6 md:gap-10">
           <div className="flex flex-col gap-6 md:gap-8 max-w-96">
-            <Image src={image} alt="Logo" width={150} height={150} />
+            <Image src="/lp8-logo.svg" alt="Logo" width={150} height={150} />
             <span className="text-[#B0B2B8] md:text-sm text-base">
               Unleash Your Creative Potential by Turning What You Consume into
               Engaging Content Ideas

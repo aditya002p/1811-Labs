@@ -30,7 +30,7 @@ export default function Pricing() {
               key={plan.title}
               className="rounded-2xl h-fit w-full md:w-[600px] flex flex-col md:flex-row"
             >
-              <div className="card flex flex-col md:flex-row gap-6 md:gap-8 p-3 md:p-6 justify-start items-center bg-[#2B2F45] rounded-2xl h-fit w-full">
+              <div className="card flex flex-col md:flex-row gap-6 md:gap-8 p-3 md:p-6 justify-start items-center bg-[#2B2F45]  rounded-2xl h-fit w-full">
                 <div className="flex gap-[24px] flex-col md:w-3/4 items-center md:items-start text-center md:text-left">
                   <h3 className="md:ml-[50px] text-center text-lg font-semibold text-[#FCF9F7]">
                     {plan.title}
