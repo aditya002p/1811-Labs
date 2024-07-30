@@ -41,9 +41,11 @@ export default function Footer() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 text-[#B0B2B8] text-sm">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-6 md:gap-10 text-[#B0B2B8] md:text-sm text-base">
             <div className="flex flex-col">
-              <span className="text-white pb-3 text-sm font-medium">All</span>
+              <span className="text-white pb-3 md:text-sm text-base font-medium font-inter">
+                All
+              </span>
               {options.all.map((option, index) => (
                 <Link
                   href={option.url}

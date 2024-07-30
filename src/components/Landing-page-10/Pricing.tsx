@@ -3,6 +3,7 @@ import tick from "@/assets/icons/tick.svg";
 import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa6";
 import pricingDetails from "./PricingConstants";
+import { ButtonIcon } from "@radix-ui/react-icons";
 
 export default function Pricing() {
   return (
@@ -22,32 +23,28 @@ export default function Pricing() {
         </span>
       </div>
       {/* flex sm:flex-col justify-between items-center w-[50%] md:w-full gap-5 py-8 md:p-5 sm:py-5 border-[#161823] border-solid bg-[#161823] rounded-[24px] */}
-      <div className="flex gap-4 md:gap-5 md:mx-2 flex-col md:flex-row justify-between items-center">
+      <div className="flex gap-[48px] pl-[32px] pr-[32px] pt-[4px] pb-[38px] md:gap-5 md:mx-2 flex-col md:flex-row justify-between items-center">
         {pricingDetails.map((plan) => {
           return (
             <div
               key={plan.title}
               className="rounded-2xl h-fit w-full md:w-[600px] flex flex-col md:flex-row"
             >
-              <div className="card flex flex-col md:flex-row gap-6 md:gap-8 p-3 md:p-6 justify-start items-center bg-[#151627] rounded-2xl h-fit w-full">
-                <div className="flex flex-col md:w-3/4 items-center md:items-start text-center md:text-left">
-                  <h3 className="text-center text-lg font-semibold ">
+              <div className="card flex flex-col md:flex-row gap-6 md:gap-8 p-3 md:p-6 justify-start items-center bg-[#2B2F45] rounded-2xl h-fit w-full">
+                <div className="flex gap-[24px] flex-col md:w-3/4 items-center md:items-start text-center md:text-left">
+                  <h3 className="md:ml-[50px] text-center text-lg font-semibold text-[#FCF9F7]">
                     {plan.title}
                   </h3>
-                  <div className="flex flex-col items-center md:items-start mt-4">
+                  <div className="flex flex-col items-center md:items-start mt-4 font-semibold">
                     <span className="text-5xl font-semibold">
                       {plan.price}
                       <span className="text-[grey]">/mo</span>
                     </span>
                   </div>
-                  <Button
-                    fill={plan.title !== "PRO"}
-                    size="sm"
-                    className="tracking-[-0.50px] mr-16 w-fit px-4 py-2 rounded-lg mt-4 p-5"
-                  >
+                  <div className="flex bg-[gray] md:w-100 tracking-[-0.50px] md:ml-[20px] w-fit px-4 py-2 rounded-lg mt-5 p-6 cursor-pointer">
                     Buy Now
-                    <FaArrowRight />
-                  </Button>
+                    <FaArrowRight className="flex justify-center text-center items-center mt-1.5 ml-2" />
+                  </div>
                 </div>
                 <div className="flex flex-col md:w-2/4 md:pl-3 p-5">
                   {plan.features.map((feat) => (
