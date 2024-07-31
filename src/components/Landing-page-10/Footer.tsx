@@ -2,7 +2,6 @@ import Button from "./Button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 
 const options = {
   all: [
@@ -27,9 +26,9 @@ const options = {
 
 export default function Footer() {
   return (
-    <div className="flex flex-col max-w-[1440px] max-h-[488px] border-solid border border-[#2B2F45] pt-[80px] pb-[80px] pl-[180px] pr-[180px] gap-[128px] md:px-[135px]">
-      <div className="grid grid-cols-2 max-w-[1080px] h-[182px] justify-between">
-        <div className="grid grid-rows-2 max-w-[443px] max-h-[182px] gap-6">
+    <div className="grid md:grid-cols-1 max-w-full border-solid border border-[#2B2F45] py-[80px] px-[20px] md:py-[80px] md:px-[180px] gap-[64px] md:gap-[128px]">
+      <div className="grid md:grid-cols-2 gap-10 md:max-w-[1080px] justify-between">
+        <div className="grid gap-6">
           <Image
             src="/lp10-logo.png"
             alt="Logo"
@@ -37,7 +36,7 @@ export default function Footer() {
             height={32}
             className="gap-1"
           />
-          <span className="max-w-[443px] max-h-[58px] text-[#A8A8A8] text-[16px] font-medium leading-[28.8px] tracking-[-2%]">
+          <span className="text-[#A8A8A8] text-[16px] font-medium leading-[28.8px] tracking-[-2%]">
             Unleash Your Creative Potential by Turning What You Consume into
             Engaging Content Ideas
           </span>
@@ -47,9 +46,9 @@ export default function Footer() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 max-w-[567px] max-h-[154px] gap-[24px]">
-          <div className="grid max-w-[184px] max-h-[154px] gap-4">
-            <span className="max-w[20px] max-h-[14px] font-medium text-[10px] leading-[14px] tracking-[4%]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+          <div className="grid gap-4">
+            <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
               All
             </span>
             {options.all.map((option, index) => (
@@ -62,8 +61,8 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className="grid max-w-[184px] max-h-[154px] gap-4">
-            <span className="max-w[25px] max-h-[14px] font-medium text-[10px] leading-[14px] tracking-[4%]">
+          <div className="grid gap-4">
+            <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
               Info
             </span>
             {options.info.map((option, index) => (
@@ -76,8 +75,8 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className="grid max-w-[151px] max-h-[74px] gap-4">
-            <span className="max-w[58px] max-h-[14px] font-medium text-[10px] leading-[14px] tracking-[4%]">
+          <div className="grid gap-4">
+            <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
               Contact Us
             </span>
             {options.contact.map((option, index) => (
