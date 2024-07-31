@@ -10,8 +10,8 @@ export default function Hero() {
     <div className="flex flex-col items-center md:gap-24 gap-16 p-4">
       <Navbar />
       <div className="flex flex-col gap-[42px] items-center max-w-screen-md:items-center">
-        <div className="grid grid-flow-row md:gap-[42px] gap-10">
-          <div className="flex flex-col md:items-baseline items-center gap-[32px] max-md:max-w-[625px]">
+        <div className="grid grid-flow-row md:gap-[42px] gap-10 md:mt-10 md:ml-[-70px]">
+          <div className="flex flex-col md:items-baseline items-center gap-[32px]">
             <div
               className="border-[#222222] p-8 items-center flex h-8 font-medium text-sm rounded-full"
               id="border-unlock"

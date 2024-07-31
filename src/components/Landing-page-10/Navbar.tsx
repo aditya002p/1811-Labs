@@ -33,7 +33,7 @@ const navOptions = [
 
 export default function Navbar() {
   return (
-    <div className="flex gap-3 justify-between h-12 md:max-w-screen-sm items-center w-full border-b border-[grey]">
+    <div className="md:max-w-[641.65px] max-h[57px] flex gap-3 justify-between h-12 items-center w-full border-b border-[grey]">
       <Link href="https://www.builderkit.ai">
         <div className="flex items-center w-fit">
           <Image src="/lp10-logo.png" width={140} height={140} alt="logo" />
