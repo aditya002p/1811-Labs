@@ -6,7 +6,7 @@ import Pricing from "./Pricing";
 import Faq from "./FAQ";
 import Footer from "./Footer";
 
-export default function LandingPage8() {
+export default function LandingPage10() {
   return (
     <div className="text-[#141414]">
       <div className="bg-custom-gradient text-white font-inter">
