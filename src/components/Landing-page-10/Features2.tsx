@@ -36,42 +36,46 @@ const cardDetails = [
 
 export default async function Features2() {
   return (
-    <div className="flex flex-col md:py-32 py-16 pt-[120px] pr-[0px] pb-[120px] pl-[0px] items-center md:gap-20 gap-10">
-      <div className="flex flex-col gap-7 items-center max-md:max-w-80">
+    <div className="flex flex-col md:py-32 py-16 pt-[120px] pr-[0px] pb-[120px] pl-[0px] items-center md:gap-20 gap-[80px]">
+      <div className="grid grid-cols-1 gap-[14px] items-center max-md:max-w-[642px] max-h-[228px]">
         <div className="flex flex-col gap-4 items-center">
-          <span className="text-[#227BFF] font-semibold text-fontSize">
+          <span className="text-[#227BFF] font-semibold text-fontSize gap-[10px] md:leading-[44px]">
             What can you do with builder kit
           </span>
-          <h1 className="font-medium text-2xl md:text-4xl md:leading-[44px] max-w-xl text-center">
-            Essentially,everything you need to ship you first AI App
+          <h1 className="grid grid-cols-1 font-medium text-2xl md:text-4xl md:leading-[44px] max-w-xl text-center text-[#ffffff]">
+            Essentially, everything you need{" "}
+            <span>to ship you first AI App</span>
           </h1>
         </div>
 
-        <span className="md:text-lg md:max-w-[642px] text-[#787878] text-center">
+        <span className="md:text-[18px] md:max-w-[642px] text-[#787878] text-center mt-5 pl-[16px]">
           Highly modular NextJS AI Boilerplate that allows you to ship any AI
-          Apps within days. Save Hours of Effort and Use our robust Deployable
-          code.
+          Apps{" "}
+          <span>
+            within days. Save Hours of Effort and Use our robust Deployable
+            code.
+          </span>
         </span>
       </div>
 
-      <div className="flex md:grid grid-cols-3 flex-col md:gap-12 gap-24 flex-wrap pl-10 pr-10">
+      <div className="grid grid-cols-1 md:grid md:grid-cols-3 flex-col md:gap-[24px] gap-[24px] flex-wrap pl-10 pr-10 mt-10">
         {cardDetails.map((card, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col gap-2 md:p-6 md:pb-8 p-6 w-96 items-start rounded-2xl bg-[#313B825D]"
+              className="flex flex-col gap-2 md:p-6 md:pb-8 p-6 w-[308px] h-[194px] items-start rounded-2xl bg-[#161823]"
             >
-              <div className="flex bg-[#227BFF] z-1 gap-10 rounded-sm">
+              <div className="flex bg-[#227BFF] z-1 gap-[10px] p-[10px] rounded-[8px] w-[34px] h-[34px]">
                 <Image
                   src={Lightning}
-                  width={25}
-                  height={25}
+                  width={18}
+                  height={18}
                   alt="logo"
-                  className="size-8 p-1 "
+                  className="size-[18px] pb-[0.57px]"
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <h1 className="md:text-xl text-lg font-medium text-left text-[#ffffff]">
+                <h1 className="md:text-xl text-lg font-semibold text-left text-[#ffffff] leading-[24.2px] tracking-[-2%]">
                   {card.title}
                 </h1>
                 <p className="text-[#787878] text-left ">{card.content}</p>

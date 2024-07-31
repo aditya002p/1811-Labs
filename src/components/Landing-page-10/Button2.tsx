@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
 }
 
-function Button({ children, fill, size, className }: ButtonProps) {
+function Button2({ children, fill, size, className }: ButtonProps) {
   return (
     <button
       className={cn(
@@ -16,8 +16,8 @@ function Button({ children, fill, size, className }: ButtonProps) {
         className,
         {
           "text-black bg-white ": fill,
-          "text-white bg-[#343854]": !fill,
-          "px-2.5 h-10": size === "sm",
+          "text-[#000000] bg-[#ffff]": !fill,
+          "px-3.5 h-10": size === "sm",
           "px-6 h-11": size == "md",
           "md:h-[52px] md:px-8 h-10 px-6 justify-center md:rounded-3xl":
             size == "lg",
@@ -29,4 +29,4 @@ function Button({ children, fill, size, className }: ButtonProps) {
   );
 }
 
-export default Button;
+export default Button2;

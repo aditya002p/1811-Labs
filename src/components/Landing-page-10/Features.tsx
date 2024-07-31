@@ -24,46 +24,50 @@ const cardDetails = [
 
 export default async function Features() {
   return (
-    <div id="features" className="flex justify-center">
-      <div className="md:max-w-5xl max-w-80 flex flex-col md:py-32 py-24 items-center md:gap-24 gap-16">
+    <div id="features" className="flex justify-center p-[16px]">
+      <div className="grid grid-cols-1 md:max-w-[1440px] md:max-h[1032.77px] md:py-[120px] items-center md:gap-24">
         <div className="flex flex-col items-center gap-7 justify-between text-center">
-          <span className="text-[#227BFF]">
+          <span className="text-[#227BFF] font-semibold md:max-w-[256px] md:max-h-[140px] md:p-[8px 16px 8px 16px] gap-[10px] md:leading-[24px] text-[13.9px]">
             What can you do with builder kit
           </span>
-          <h1 className="md:text-4xl text-2xl font-medium max-w-lg flex flex-col md:gap-2">
+          <h1 className="text-[25px] md:text-[36px] font-semibold w-[561px] h-[88px] text-center md:tracking-[-3%] md:grid grid-cols-1 flex flex-col">
             <span>Explore the power of</span>
             <span>
               AI apps generation <span>Workflow</span>
             </span>
           </h1>
 
-          <span className="text-[grey] leading-6 md:text-lg max-w-[628px]">
+          <span className="text-[#A8A8A8] md:leading-[28.8px] md:text-[18px] md:max-w-[628px] md:max-h-[58px] grid grid-cols-1 justify-center md:mt-10 md:mb-15 mb-20">
             Highly modular NextJS AI Boilerplate that allows you to ship any AI
-            Apps within days. Save Hours of Effort and Use our robust Deployable
-            code.
+            Apps
+            <span>
+              {" "}
+              within days. Save Hours of Effort and Use our robust Deployable
+              code.
+            </span>
           </span>
         </div>
 
-        <div className="flex flex-col gap-4 md:flex-row md:gap-4">
+        <div className="grid md:grid-cols-3 gap-4 max-w-[1016px] md:max-h-[468.77px]">
           {cardDetails.map((card) => (
             <div
               key={card.title}
-              className="flex flex-col w-full md:w-[32%] gap-[18px] p-4 border-[#2b2f45] border border-solid bg-[#161823] rounded-[24px]"
+              className="grid grid-cols-1 max-w-[328px] max-h-[468.77px] gap-[20px] p-4 border-[#2b2f45] border border-solid bg-[#161823] rounded-[24px]"
             >
               <div className="self-stretch rounded-md bg-[#1e202d]">
                 <Image
                   src={card.url}
                   alt={card.title}
                   width={294}
-                  height={294}
-                  className="h-[294px] w-full rounded-tl-md rounded-tr-md bg-[#1e202d]"
+                  height={294.77}
+                  className="h-[294.77px] max-w-[294px] rounded-[6.12px] bg-[#1E212D] gap-[7.66px]"
                 />
               </div>
-              <div className="flex flex-col items-start gap-0.5 self-stretch">
-                <h2 className="font-medium text-xl md:text-2xl mb-4 text-white tracking-[-0.40px]">
+              <div className="grid grid-cols-1 items-start gap-[12px] max-w-294px max-h-[120px]">
+                <span className="font-semibold text-[20px] leading-[24.2px] tracking-[-2%] text-white">
                   {card.title}
-                </h2>
-                <span className="w-full font-normal leading-[186%] tracking-[-0.32px] text-gray-500">
+                </span>
+                <span className="max-w-[294px] max-h-[90px] font-normal leading-[29.76px] tracking-[-2%] text-[#A8A8A8] text-[16px]">
                   {card.content}
                 </span>
               </div>

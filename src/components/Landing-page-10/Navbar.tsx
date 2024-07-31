@@ -33,27 +33,23 @@ const navOptions = [
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between h-12 md:max-w-screen-sm mt-4 items-center w-full max-w-80 border-b border-[grey] px-2 border-spacing-10 ">
+    <div className="flex gap-3 justify-between h-12 md:max-w-screen-sm items-center w-full border-b border-[grey]">
       <Link href="https://www.builderkit.ai">
-        <div className="flex items-center gap-2 w-fit">
-          <Image src="/lp8-logo.svg" width={140} height={140} alt="logo" />
+        <div className="flex items-center w-fit">
+          <Image src="/lp10-logo.png" width={140} height={140} alt="logo" />
         </div>
       </Link>
 
-      <div className="md:flex hidden justify-between gap-3 font-medium">
+      <div className="md:flex ml-40 hidden gap-6 font-medium">
         {navOptions.map((opt) => {
           return (
-            <Link
-              href={opt.url}
-              key={opt.label}
-              className="px-1 py-2.5 text-sm "
-            >
+            <Link href={opt.url} key={opt.label} className="text-sm ">
               {opt.label}
             </Link>
           );
         })}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-1">
         <div className="md:block hidden">
           <Button fill={false} size="sm">
             <span className="leading-5">Signin</span>
@@ -63,11 +59,14 @@ export default function Navbar() {
 
         <Sheet>
           <SheetTrigger className="block md:hidden">
-            <HiBars3 size={24} />
+            <HiBars3 size={25} />
           </SheetTrigger>
-          <SheetContent side="top" className="bg-black text-white border-black">
-            <div className="space-y-6">
-              <div className="flex flex-col gap-4 text-sm">
+          <SheetContent
+            side="top"
+            className="bg-black text-white border-black w-full overflow-hidden"
+          >
+            <div className="space-y-6 p-4">
+              <div className="flex flex-col gap-2 text-sm">
                 {navOptions.map((item, index) => (
                   <div key={index} className="text-sm font-medium py-2">
                     <SheetClose asChild>

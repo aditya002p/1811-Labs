@@ -17,8 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(90deg, rgba(9,10,24,1) 100%, rgba(49,59,130,1) 100%)",
+        "new-gradient": [
+          "radial-gradient(rgba(0, 133, 255, 0.16) 10%, rgba(26, 26, 26, 0.16) 100%)",
+        ],
+      },
       fontFamily: {
-        inter: ["Inter"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
