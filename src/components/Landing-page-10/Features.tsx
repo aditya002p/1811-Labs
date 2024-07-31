@@ -30,22 +30,21 @@ export default async function Features() {
           <span className="text-[#227BFF] font-semibold md:max-w-[256px] md:max-h-[140px] md:p-[8px 16px 8px 16px] gap-[10px] md:leading-[24px] text-[13.9px]">
             What can you do with builder kit
           </span>
-          <h1 className="text-[25px] md:text-[36px] font-semibold w-[561px] h-[88px] text-center md:tracking-[-3%] md:grid grid-cols-1 flex flex-col">
-            <span>Explore the power of</span>
-            <span>
-              AI apps generation <span>Workflow</span>
+          <div className="grid grid-flow-row md:max-w-[628px] md:max-h-[174px] gap-[28px]">
+            <h1 className="text-[25px] md:text-[36px] font-semibold md:w-[561px] md:h-[88px] text-center md:tracking-[-3%] md:grid grid-cols-1 flex flex-col md:leading-4 ">
+              <span>Explore the power of</span>
+              <span>AI apps generation Workflow</span>
+            </h1>
+            <span className="text-[#A8A8A8] md:leading-[28.8px] md:text-[18px] md:max-w-[628px] md:text-center grid grid-cols-1 justify-center md:mt-2 md:mb-15 mb-20">
+              Highly modular NextJS AI Boilerplate that allows you to ship any
+              AI Apps
+              <span>
+                {" "}
+                within days. Save Hours of Effort and Use our robust Deployable
+                code.
+              </span>
             </span>
-          </h1>
-
-          <span className="text-[#A8A8A8] md:leading-[28.8px] md:text-[18px] md:max-w-[628px] md:max-h-[58px] grid grid-cols-1 justify-center md:mt-10 md:mb-15 mb-20">
-            Highly modular NextJS AI Boilerplate that allows you to ship any AI
-            Apps
-            <span>
-              {" "}
-              within days. Save Hours of Effort and Use our robust Deployable
-              code.
-            </span>
-          </span>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 max-w-[1016px] md:max-h-[468.77px]">

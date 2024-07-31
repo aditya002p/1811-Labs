@@ -23,6 +23,9 @@ module.exports = {
         "new-gradient": [
           "radial-gradient(rgba(0, 133, 255, 0.16) 10%, rgba(26, 26, 26, 0.16) 100%)",
         ],
+        "card-gradient": [
+          "radial-gradient(#2B2F45 10%, rgba(26, 26, 26, 0.16) 100%)",
+        ],
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

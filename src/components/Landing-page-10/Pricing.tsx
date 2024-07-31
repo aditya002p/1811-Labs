@@ -1,16 +1,16 @@
 import Image from "next/image";
 import tick from "@/assets/icons/tick.svg";
-import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa6";
 import { Card2, Card2Type } from "./Card2";
 import { Card1, Card1Type } from "./card1";
 import Button2 from "./Button2";
+import Button1 from "./Button1";
 
 export default function Pricing() {
   return (
     <div
       id="pricing"
-      className="flex flex-col gap-[80px] items-center p-[120px 0px 120px 0px] text-white md:max-w-[1440px] md:max-h-[774px]"
+      className="flex flex-col gap-[80px] items-center p-[120px 0px 120px 0px] text-white md:max-w-[1440px] md:h-[774px]"
     >
       <div className="flex flex-col gap-[14px] items-center md:max-w-[561px] md:max-h-[155px]">
         <div className="max-w-[79px] max-h-[40px] p-[120px, 0px, 120px, 0px] mt-10">
@@ -52,14 +52,14 @@ export default function Pricing() {
                     </div>
                   </div>
                   <div className="max-w-[166px] max-h-[52px] p-[16px, 26px, 16px, 26px] rounded-[24px] gap-[10px] items-center">
-                    <Button
+                    <Button1
                       fill={PricingPlan.title !== "PRO"}
                       size="sm"
                       className="max-w-[114px] max-h-[44px] rounded-[8px] p-[12px, 16px, 12px, 16px] gap-[10px] bg-gray-500 items-center"
                     >
                       Buy Now
                       <FaArrowRight />
-                    </Button>
+                    </Button1>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 max-w-[283px] gap-[16px] p-[0px, 8px, 0px, 8px]">
