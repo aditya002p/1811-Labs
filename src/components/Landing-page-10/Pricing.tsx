@@ -85,7 +85,7 @@ export default function Pricing() {
               key={PricingPlan.title}
               className="rounded-[24px] max-h[299px] max-w-[539px] grid grid-cols-1 gap-[48px] py-[32px] px-[4px]"
             >
-              <div className="flex flex-col md:flex-row gap-12 py-8 pr-[4px] pl-[38px] items-center bg-custom-background border border-[#2B2F45] rounded-3xl">
+              <div className="flex flex-col md:flex-row gap-12 py-8 pr-[4px] pl-[38px] items-center card2 border border-[#2B2F45] rounded-3xl">
                 <div className="flex flex-col gap-[24px] max-w-[166px] max-h-[150px] items-center">
                   <div className="flex flex-col max-w-[166px] max-h-[82px] gap-[8px] items-center">
                     <span className="max-w-[37px] max-h-[24px] font-semibold text-[18px] leading-[24px] tracking-[-0.5px]">
