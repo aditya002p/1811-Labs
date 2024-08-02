@@ -8,16 +8,14 @@ import Footer from "./Footer";
 
 export default function LandingPage10() {
   return (
-    <div className="text-[#141414]">
-      <div className="bg-custom-gradient text-white font-inter">
-        <Hero />
-        <FeaturedOn />
-        <Features2 />
-        <Features />
-        <Pricing />
-        <Faq />
-        <Footer />
-      </div>
+    <div className="bg-custom-gradient min-h-s text-white font-inter">
+      <Hero />
+      <FeaturedOn />
+      <Features2 />
+      <Features />
+      <Pricing />
+      <Faq />
+      <Footer />
     </div>
   );
 }

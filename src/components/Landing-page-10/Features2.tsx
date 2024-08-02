@@ -36,19 +36,18 @@ const cardDetails = [
 
 export default function Features2() {
   return (
-    <div className="flex flex-col py-[60px] md:py-[120px] px-4 md:px-0 items-center gap-[40px] md:gap-[80px] w-full md:h-[964px]">
+    <div className="flex flex-col py-[60px] md:py-[120px] px-4 md:px-0 items-center gap-[40px] md:gap-[80px] w-full md:h-[964px] filter-custom-drop-shadow">
       <div className="grid grid-cols-1 gap-[14px] items-center max-w-[642px]">
         <div className="flex flex-col gap-[10px] items-center py-2 px-4">
           <span className="text-[#227BFF] text-[13.9px] font-semibold leading-[24px] text-center">
             What can you do with builder kit
           </span>
         </div>
-        <div className="flex flex-col gap-7 text-center">
-          <h1 className="font-medium text-2xl md:text-4xl leading-[32px] md:leading-[44px] text-[#ffffff]">
-            Essentially, everything you need
-            <span> to ship your first AI App</span>
-          </h1>
-          <p className="font-medium text-[16px] md:text-[18px] text-[#A8A8A8]">
+        <div className="flex flex-col gap-7 items-center text-center md:w-[642px]">
+          <div className="font-medium text-2xl md:text-[36px] leading-[32px] md:leading-[44px] text-[#ffffff] md:w-[561px] tracking-[0.03em]">
+            Essentially, everything you need to ship your first AI App
+          </div>
+          <p className="font-medium text-[16px] md:text-[18px] text-[#A8A8A8] md:w-[642px]">
             Highly modular NextJS AI Boilerplate that allows you to ship any AI
             Apps
             <span>

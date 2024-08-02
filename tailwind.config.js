@@ -20,12 +20,15 @@ module.exports = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(63.54deg, rgba(9, 10, 24, 0.2) 0%, rgba(49, 59, 130, 0.2) 100%), linear-gradient(0deg, #141414, #141414)",
-        "new-gradient": [
-          "radial-gradient(50% 50% at 50% 50%, rgba(0, 133, 255, 0.16) 0%, rgba(26, 26, 26, 0.16) 100%), linear-gradient(0deg, #161823, #161823)",
-        ],
+        "custom-background":
+          "radial-gradient(50% 50% at 50% 50%, rgba(0, 133, 255, 0.16) 0%, rgba(26, 26, 26, 0.16) 150%), linear-gradient(0deg, #161823, #161823)",
+        "custom-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         "card-gradient": [
           "radial-gradient(#2B2F45 10%, rgba(26, 26, 26, 0.16) 100%)",
         ],
+      },
+      boxShadow: {
+        "custom-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

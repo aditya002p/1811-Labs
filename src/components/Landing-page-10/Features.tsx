@@ -31,16 +31,22 @@ export default function Features() {
             What can you do with builder kit
           </span>
         </div>
-        <div className="grid text-center md:max-w-[628px] gap-[28px]">
-          <h2 className="text-[24px] md:text-[36px] font-semibold tracking-[-0.03em] leading-[32px] md:leading-[44px]">
-            <span>Explore the power of</span>
-            <span>AI apps generation Workflow</span>
-          </h2>
-          <p className="text-[#A8A8A8] text-[16px] md:text-[18px] leading-[24px] md:leading-[28.8px]">
-            Highly modular NextJS AI Boilerplate that allows you to ship any AI
-            Apps within days. Save Hours of Effort and Use our robust Deployable
-            code.
-          </p>
+        <div className="flex flex-col text-center md:max-w-[628px] gap-[28px] items-center">
+          <div className="text-[24px] md:text-[36px] font-semibold tracking-[-0.03em] leading-[32px] md:leading-[44px] md:w-[561px]">
+            <span className="flex flex-col">
+              Explore the power of <span>AI apps generation Workflow</span>
+            </span>
+          </div>
+          <div className="flex flex-col text-[#A8A8A8] text-[16px] md:text-[18px] leading-[24px] md:leading-[28.8px] md:w-[628px] font-medium">
+            <span>
+              Highly modular NextJS AI Boilerplate that allows you to ship any
+              AI Apps
+            </span>
+            <span>
+              within days. Save Hours of Effort and Use our robust Deployable
+              code.
+            </span>
+          </div>
         </div>
       </div>
 

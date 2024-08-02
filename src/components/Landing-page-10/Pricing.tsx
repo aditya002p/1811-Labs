@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tick from "@/assets/icons/tick.svg";
+import tickGray from "@/assets/icons/tickGray.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { Card2, Card2Type } from "./Card2";
 import { Card1, Card1Type } from "./card1";
@@ -33,36 +34,31 @@ export default function Pricing() {
               className="rounded-[24px] max-h[299px] max-w-[539px] grid grid-cols-1 gap-[48px] py-[32px] px-[4px]"
             >
               <div className=" flex flex-col md:flex-row gap-12 py-8 pr-[4px] pl-[38px] items-center bg-[#161823] border border-[#2B2F45] rounded-3xl">
-                <div className="flex flex-col gap-[24px] max-w-[166px] max-h-[150px]">
-                  <div className="max-w-[166px] max-h-[82px] gap-[8px]">
-                    <div className="max-w-[134px] max-h-[28px] py-[6px] px-[14px] text-center font-semibold text-[#FCF9F7] gap-2 rounded-sm">
-                      <span className="max-w-[37px] max-h-[24px] font-semibold text-[18px] leading-[24px] tracking-[-0.5px]">
-                        {PricingPlan.title}
-                      </span>
-                    </div>
-                    <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[--1.2000000476837158px] items-center">
-                      <span className="text-5xl font-semibold">
+                <div className="flex flex-col gap-[24px] max-w-[166px] max-h-[150px] items-center">
+                  <div className="flex flex-col max-w-[166px] max-h-[82px] gap-[8px] items-center">
+                    <span className="max-w-[37px] max-h-[24px] font-semibold text-[18px] leading-[24px] tracking-[-0.5px] text-[#FCF9F7]">
+                      {PricingPlan.title}
+                    </span>
+                    <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[0.05em]">
+                      <span className="text-[40px] font-semibold">
                         {PricingPlan.price}
-                        <span className="text-[grey]">/mo</span>
+                        <span className="text-[gray]">/mo</span>
                       </span>
                     </div>
                   </div>
-                  <div className="max-w-[166px] max-h-[52px] py-[16px] px-[26px] rounded-[24px] gap-[10px] items-center">
-                    <Button1
-                      fill={PricingPlan.title !== "PRO"}
-                      size="sm"
-                      className="max-w-[114px] max-h-[44px] rounded-[8px] py-[16px] px-[26px] bg-gray-500 items-center"
-                    >
-                      Buy Now
-                      <FaArrowRight />
-                    </Button1>
-                  </div>
+                  <Button1
+                    fill={PricingPlan.title !== "PRO"}
+                    className="w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-gray-500 items-center"
+                  >
+                    Buy Now
+                    <FaArrowRight />
+                  </Button1>
                 </div>
                 <div className="grid grid-cols-1 max-w-[283px] max-h-[235px] gap-[16px] px-[0px] py-[8px]">
                   {PricingPlan.features.map((feat: string) => (
                     <div
                       key={feat}
-                      className="flex items-start gap-2 text-start max-w-[267px] max-h-[23px]"
+                      className="flex items-start gap-2 text-start max-w-[267px] max-h-[22px]"
                     >
                       <Image src={tick} width={20} height={20} alt="icon" />
                       <span>{feat}</span>
@@ -71,9 +67,9 @@ export default function Pricing() {
                   {(PricingPlan.features1 || []).map((feat: string) => (
                     <div
                       key={feat}
-                      className="flex items-start gap-2 text-start text-[gray] max-w-[267px] max-h-[44px]"
+                      className="flex items-start gap-2 text-start text-[gray] max-w-[267px] max-h-[34px]"
                     >
-                      <Image src={tick} width={20} height={20} alt="icon" />
+                      <Image src={tickGray} width={20} height={20} alt="icon" />
                       <span>{feat}</span>
                     </div>
                   ))}
@@ -89,37 +85,32 @@ export default function Pricing() {
               key={PricingPlan.title}
               className="rounded-[24px] max-h[299px] max-w-[539px] grid grid-cols-1 gap-[48px] py-[32px] px-[4px]"
             >
-              <div className="flex flex-col md:flex-row gap-12 py-8 pr-[4px] pl-[38px] items-center bg-new-gradient border border-[#2B2F45] rounded-3xl">
-                <div className="flex flex-col gap-[24px] max-w-[166px] max-h-[150px]">
-                  <div className="max-w-[166px] max-h-[82px] gap-[8px]">
-                    <div className="max-w-[134px] max-h-[28px] py-[6px] px-[14px] text-center font-semibold text-[#FCF9F7] gap-2 rounded-sm">
-                      <span className="max-w-[37px] max-h-[24px] font-semibold text-[18px] leading-[24px] tracking-[-0.5px]">
-                        {PricingPlan.title}
-                      </span>
-                    </div>
-                    <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[--1.2000000476837158px] items-center">
-                      <span className="text-5xl font-semibold">
+              <div className="flex flex-col md:flex-row gap-12 py-8 pr-[4px] pl-[38px] items-center bg-custom-background border border-[#2B2F45] rounded-3xl">
+                <div className="flex flex-col gap-[24px] max-w-[166px] max-h-[150px] items-center">
+                  <div className="flex flex-col max-w-[166px] max-h-[82px] gap-[8px] items-center">
+                    <span className="max-w-[37px] max-h-[24px] font-semibold text-[18px] leading-[24px] tracking-[-0.5px]">
+                      {PricingPlan.title}
+                    </span>
+                    <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[0.05em]">
+                      <span className="text-[40px] font-semibold">
                         {PricingPlan.price}
-                        <span className="text-[grey]">/mo</span>
+                        <span className="text-[gray]">/mo</span>
                       </span>
                     </div>
                   </div>
-                  <div className="max-w-[166px] max-h-[52px] py-[16px] px-[26px] rounded-[24px] gap-[10px] items-center">
-                    <Button2
-                      fill={PricingPlan.title !== "PRO"}
-                      size="sm"
-                      className="max-w-[114px] max-h-[44px] rounded-[8px] py-[16px] px-[26px] bg-[#FFFFFF] items-center"
-                    >
-                      Buy Now
-                      <FaArrowRight />
-                    </Button2>
-                  </div>
+                  <Button2
+                    fill={PricingPlan.title !== "PRO"}
+                    className="w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-[#FFFFFF] items-center"
+                  >
+                    Buy Now
+                    <FaArrowRight />
+                  </Button2>
                 </div>
                 <div className="grid grid-cols-1 max-w-[283px] max-h-[235px] gap-[16px] px-[0px] py-[8px]">
                   {PricingPlan.features.map((feat: string) => (
                     <div
                       key={feat}
-                      className="flex items-start gap-2 text-start max-w-[267px] max-h-[44px]"
+                      className="flex items-start gap-2 text-start max-w-[267px] max-h-[34px] "
                     >
                       <Image src={tick} width={20} height={20} alt="icon" />
                       <span>{feat}</span>

@@ -7,12 +7,12 @@ import {
 
 const accordion = [
   {
-    title: "What is builder kit?",
+    title: "What is buildekit?",
     content:
       "Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps within days.",
   },
   {
-    title: "What do I get exactly?",
+    title: "What do i get exactly?",
     content:
       "Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps within days.",
   },
@@ -30,9 +30,9 @@ const accordion = [
 
 export default function FAQ() {
   return (
-    <div className="flex flex-col gap-10 py-[60px] md:py-[120px] px-4 md:px-[10px] items-center w-full">
+    <div className="flex flex-col gap-10 py-[60px] md:py-[120px] px-4 md:px-[10px] items-center w-full md:gap-[10px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[77px] max-w-[1080px] w-full">
-        <div className="flex flex-col gap-4 md:gap-[16px] text-center md:text-left items-center md:items-start">
+        <div className="flex flex-col gap-4 md:gap-[16px] text-center md:text-left items-center md:items-start md:w-[334px]">
           <span className="font-medium text-2xl md:text-[32px] leading-[38.73px] tracking-[-1.68px] text-[#ffffff]">
             Frequently asked questions
           </span>

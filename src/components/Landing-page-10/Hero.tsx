@@ -21,10 +21,12 @@ export default function Hero() {
             <h1 className="font-semibold leading-[41.2px] text-[40px] text-left w-full md:w-[497px] h-auto tracking-[-0.04em] grid grid-flow-col">
               Generate AI Apps with ease
             </h1>
-            <div className="text-[#787878] w-full md:w-[625px] leading-[28.8px] font-normal text-[14px] md:text-[16px] flex flex-col">
+            <div className="text-[#D1D1D3] md:h-[58px] w-full md:w-[625px] leading-[28.8px] font-normal text-[14px] md:text-[16px] flex flex-col">
               Highly modular NextJS AI Boilerplate that allows you to ship any
-              AI Apps within days. Save Hours of Effort and Use our robust
-              Deployable code.
+              AI Apps within{" "}
+              <span>
+                days. Save Hours of Effort and Use our robust Deployable code.
+              </span>
             </div>
           </div>
           <Button
