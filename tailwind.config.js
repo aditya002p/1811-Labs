@@ -19,9 +19,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         "custom-gradient":
-          "linear-gradient(90deg, rgba(9,10,24,1) 100%, rgba(49,59,130,1) 100%)",
+          "linear-gradient(63.54deg, rgba(9, 10, 24, 0.2) 0%, rgba(49, 59, 130, 0.2) 100%), linear-gradient(0deg, #141414, #141414)",
         "new-gradient": [
-          "radial-gradient(rgba(0, 133, 255, 0.16) 10%, rgba(26, 26, 26, 0.16) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(0, 133, 255, 0.16) 0%, rgba(26, 26, 26, 0.16) 100%), linear-gradient(0deg, #161823, #161823)",
         ],
         "card-gradient": [
           "radial-gradient(#2B2F45 10%, rgba(26, 26, 26, 0.16) 100%)",

@@ -33,30 +33,35 @@ const navOptions = [
 
 export default function Navbar() {
   return (
-    <div className="md:max-w-[641.65px] max-h[57px] flex gap-3 justify-between h-12 items-center w-full border-b border-[grey]">
+    <div className="md:max-w-[641.65px] max-h[57px] flex gap-3 justify-between items-center w-full border-b border-[#222222] pt[8px] pl-[8px] pb-[16px] pr-[8px]">
       <Link href="https://www.builderkit.ai">
         <div className="flex items-center w-fit">
-          <Image src="/lp10-logo.png" width={140} height={140} alt="logo" />
+          <Image src="/lp10-logo.png" width={132} height={32} alt="logo" />
         </div>
       </Link>
-
-      <div className="md:flex ml-40 hidden gap-6 font-medium">
-        {navOptions.map((opt) => {
-          return (
-            <Link href={opt.url} key={opt.label} className="text-sm ">
-              {opt.label}
-            </Link>
-          );
-        })}
-      </div>
-      <div className="flex gap-1">
-        <div className="md:block hidden">
-          <Button fill={false} size="sm">
-            <span className="leading-5">Signin</span>
-            <ArrowRightIcon />
-          </Button>
+      <div className="flex items-center justify-center max-w-[374px] max-h-[32px] gap-[14px]">
+        <div className="md:flex hidden gap-6 font-medium">
+          {navOptions.map((opt) => {
+            return (
+              <Link href={opt.url} key={opt.label} className="text-sm ">
+                {opt.label}
+              </Link>
+            );
+          })}
         </div>
-
+        <div className="flex gap-1">
+          <div className="md:block hidden">
+            <Button
+              fill={false}
+              className="flex flex-row max-w-[80px] h-[32px] rounded-[24px] pt-[6px] pr-[10px] pb-[6px] pl-[10px] gap-[10px] bg-[#343854] text-[#FFFFFF]"
+            >
+              <span className="flex leading-5 font-normal text-[14px] tracking-[-0.04em] w-[38px] h-[20px]">
+                Signin
+              </span>
+              <ArrowRightIcon className="w-[12px] h-[12px]" />
+            </Button>
+          </div>
+        </div>
         <Sheet>
           <SheetTrigger className="block md:hidden">
             <HiBars3 size={25} />

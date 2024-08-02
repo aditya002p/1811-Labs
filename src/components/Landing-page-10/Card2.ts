@@ -8,7 +8,7 @@ export type Card2Type = PricingPlan;
 export const Card2: PricingPlan[] = [
   {
     title: "PRO",
-    price: "199",
+    price: "$199",
     features: [
       "NextJS Boilerplate",
       "AI Modules",

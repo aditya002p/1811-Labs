@@ -16,7 +16,6 @@ export default function LandingPage10() {
         <Features />
         <Pricing />
         <Faq />
-        <hr className="border opacity-20 w-[100%]" />
         <Footer />
       </div>
     </div>
