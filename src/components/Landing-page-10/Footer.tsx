@@ -46,15 +46,15 @@ export default function Footer() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-[24px] md:max-w-[567px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-[24px] md:max-w-xl">
           <div className="grid gap-4">
-            <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
-              All
+            <span className="font-medium text-[10px] leading-[14px] -tracking-wider">
+              ALL
             </span>
             {options.all.map((option, index) => (
               <Link
                 href={option.url}
-                className="text-[16px] leading-[22.4px] tracking-[-2%] font-medium text-[#A8A8A8]"
+                className="text-base tracking-tight font-medium text-[#A8A8A8]"
                 key={index}
               >
                 {option.label}
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
           <div className="grid gap-4">
             <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
-              Info
+              INFO
             </span>
             {options.info.map((option, index) => (
               <Link
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
           <div className="grid gap-4 max-w-[151px] max-h-[74px]">
             <span className="font-medium text-[10px] leading-[14px] tracking-[4%]">
-              Contact Us
+              CONTACTS
             </span>
             {options.contact.map((option, index) => (
               <Link

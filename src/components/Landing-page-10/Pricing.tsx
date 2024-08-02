@@ -9,24 +9,22 @@ import Button1 from "./Button1";
 
 export default function Pricing() {
   return (
-    <div className="flex flex-col gap-[80px] items-center py-[120px] px-[0px] text-white md:h-[774px]">
-      <div className="flex flex-col gap-[14px] items-center md:max-w-[561px] md:max-h-[155px]">
-        <div className="max-w-[79px] max-h-[40px] py-[8px] px-[16px] gap-[10px]">
-          <span className="text-[#227BFF] text-[13.9px] leading-[24px] font-semibold">
-            Pricing
-          </span>
+    <div className="flex flex-col gap-20 items-center py-28 px-0 text-white max-h-full">
+      <div className="flex flex-col gap-4 items-center md:max-w-xl md:max-h-40">
+        <div className="max-w-20 max-h-10 py-2 px-4 gap-3">
+          <span className="text-[#227BFF] text-sm font-semibold">Pricing</span>
         </div>
-        <div className="flex flex-col md:max-w-[561px] md:max-h-[101px] gap-[28px] items-center">
-          <span className="grid grid-flow-row text-center text-[#F7F7F8] text-[36px] font-medium leading-[44px] tracking-[-0.03em] md:max-w-[561px] md:max-h-[44px]">
+        <div className="flex flex-col md:max-w-xl md:max-h-28 gap-7 items-center">
+          <span className="grid grid-flow-row text-center text-[#F7F7F8] text-4xl font-medium tracking-tight md:max-w-xl md:max-h-11">
             Pricing Plans to Suit Your Needs
           </span>
 
-          <span className="!font-normal tracking-[-0.18px] !text-[#A8A8A8] max-w-[550px] max-h-[29px] leading-[28.8px]">
+          <span className="font-normal tracking-tight text-[#A8A8A8] max-w-xl max-h-7 text-base">
             Start making smarter decisions, Choose a plan
           </span>
         </div>
       </div>
-      <div className="max-w-[1094px] grid md:grid-cols-2 gap-[16px]">
+      <div className="max-w-6xl grid md:grid-cols-2 gap-4">
         {Card1.map((PricingPlan: Card1Type) => {
           return (
             <div
@@ -42,7 +40,7 @@ export default function Pricing() {
                     <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[0.05em]">
                       <span className="text-[40px] font-semibold">
                         {PricingPlan.price}
-                        <span className="text-[gray]">/mo</span>
+                        <span className="text-[#9CA3AF]">/mo</span>
                       </span>
                     </div>
                   </div>
@@ -67,7 +65,7 @@ export default function Pricing() {
                   {(PricingPlan.features1 || []).map((feat: string) => (
                     <div
                       key={feat}
-                      className="flex items-start gap-2 text-start text-[gray] max-w-[267px] max-h-[34px]"
+                      className="flex items-start gap-2 text-start text-[#484848] max-w-[267px] max-h-[34px]"
                     >
                       <Image src={tickGray} width={20} height={20} alt="icon" />
                       <span>{feat}</span>
@@ -94,13 +92,13 @@ export default function Pricing() {
                     <div className="flex flex-col leading-[50px] font-semibold w-[166px] h-[50px] tracking-[0.05em]">
                       <span className="text-[40px] font-semibold">
                         {PricingPlan.price}
-                        <span className="text-[gray]">/mo</span>
+                        <span className="text-[#9CA3AF]">/mo</span>
                       </span>
                     </div>
                   </div>
                   <Button2
                     fill={PricingPlan.title !== "PRO"}
-                    className="w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-[#FFFFFF] items-center"
+                    className="w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-[#FFFFFF] text-[#000000] items-center"
                   >
                     Buy Now
                     <FaArrowRight />

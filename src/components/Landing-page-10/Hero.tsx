@@ -9,34 +9,34 @@ export default function Hero() {
   return (
     <div className="flex flex-col items-center pt-4 px-4 pb-0 md:px-0 max-h-[1519.83px]">
       <Navbar />
-      <div className="flex flex-col md:flex-row md:gap-[42px] pt-[88px] px-4 md:px-[230px] pb-[88px] md:h-[416px]">
-        <div className="flex flex-col gap-8 items-center md:items-start justify-center self-stretch">
-          <div className="flex flex-col items-center md:items-start gap-[18px] md:max-w-[625px] md:max-h-[164px]">
-            <div className="border border-[#222222] py-[6px] px-4 md:px-[16px] max-w-[242px] max-h-[29px] rounded-[30px] gap-2">
-              <div className="h-[17px] text-[14px] leading-[16.94px] font-semibold text-left flex flex-row items-center">
+      <div className="flex flex-col md:flex-row md:gap-10 pt-24 px-4 md:px-56 pb-24 md:h-[416px]">
+        <div className="flex flex-col gap-8 items-center md:items-start justify-center self-stretch max-h-[240px]">
+          <div className="flex flex-col items-center md:items-start gap-4 md:max-w-[625px] md:max-h-40">
+            <div className="border border-[#222222] py-1.5 px-4 rounded-full gap-2 flex items-center">
+              <span className="text-sm font-semibold">
                 Unlock Your Creative Spark!
-                <ArrowRightIcon className="ml-2 w-[12px] h-[12px]" />
-              </div>
+              </span>
+              <ArrowRightIcon className="ml-2 w-3 h-3" />
             </div>
-            <h1 className="font-semibold leading-[41.2px] text-[40px] text-left w-full md:w-[497px] h-auto tracking-[-0.04em] grid grid-flow-col">
+            <h1 className="text-center md:text-left font-semibold leading-10 text-3xl sm:text-4xl w-full md:w-[497px] h-auto tracking-tight text-[#FFFFFF]">
               Generate AI Apps with ease
             </h1>
-            <div className="text-[#D1D1D3] md:h-[58px] w-full md:w-[625px] leading-[28.8px] font-normal text-[14px] md:text-[16px] flex flex-col">
+            <div className="text-center md:text-left text-[#D1D1D3] md:h-14 w-full md:w-[625px] leading-7 font-normal text-sm md:text-base">
               Highly modular NextJS AI Boilerplate that allows you to ship any
               AI Apps within{" "}
-              <span>
+              <span className="inline md:block">
                 days. Save Hours of Effort and Use our robust Deployable code.
               </span>
             </div>
           </div>
           <Button
             fill={false}
-            className="w-[142px] h-[44px] rounded-3xl py-[10px] px-[24px] gap-[10px] flex bg-[#343854]"
+            className="w-36 h-11 rounded-3xl py-2.5 px-6 gap-2.5 flex bg-[#343854]"
           >
-            <span className="w-[72px] h-[24px] text-[14px] leading-6 tracking-[-0.04em] text-[#FFFFFF] font-normal">
+            <span className="w-18 h-6 text-sm leading-6 tracking-tight text-[#FFFFFF] font-normal">
               Get Started
             </span>
-            <FaArrowRight className="w-[12px] h-[12px]" />
+            <FaArrowRight className="w-3 h-3" />
           </Button>
         </div>
       </div>
