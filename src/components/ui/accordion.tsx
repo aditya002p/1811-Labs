@@ -2,8 +2,7 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
-
+import { PlusIcon, MinusIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 
 const Accordion = AccordionPrimitive.Root;
@@ -23,22 +22,30 @@ AccordionItem.displayName = "AccordionItem";
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex w-full">
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={cn(
-        "flex w-full items-center justify-between py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180",
-        className
-      )}
-      {...props}
-    >
-      <span className="mr-4">{children}</span>{" "}
-      {/* Adds spacing between text and icon */}
-      <ChevronDownIcon className="size-4 shrink-0 text-muted-foreground transition-transform duration-200" />
-    </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-));
+>(({ className, children, ...props }, ref) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <AccordionPrimitive.Header className="flex w-full">
+      <AccordionPrimitive.Trigger
+        ref={ref}
+        className={cn(
+          "flex w-full items-center justify-between py-4 px-6 text-base font-medium transition-all",
+          className
+        )}
+        {...props}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="mr-4">{children}</span>
+        {isOpen ? (
+          <MinusIcon className="size-4 shrink-0 transition-transform duration-200 bg-[#2B2F45] w-[24px] h-[24px] rounded-[10px] p-1 gap-3 text-[#FFFFF]" />
+        ) : (
+          <PlusIcon className="size-4 shrink-0 transition-transform duration-200 bg-[#2B2F45] w-[24px] h-[24px] rounded-[10px] p-1 gap-3 text-[#FFFFFF]" />
+        )}
+      </AccordionPrimitive.Trigger>
+    </AccordionPrimitive.Header>
+  );
+});
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<
