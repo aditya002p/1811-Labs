@@ -65,18 +65,18 @@ export default function FAQ() {
           </p>
         </div>
         <div className="flex flex-col md:w-[669px] w-full">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible>
             {accordion.map((item, index) => {
               return (
                 <AccordionItem
                   value={item.title}
                   key={index}
-                  className="p-2 border-b border-[#2B2F45]"
+                  className="p-2 border-b border-[#2B2F45] w-full justify-between"
                 >
                   <AccordionTrigger className="flex justify-between pl-4 font-medium text-base gap-4 ">
                     <span>{item.title}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#A8A8A8] pl-4 md:text-base leading-[25.6px] font-normal">
+                  <AccordionContent className="text-[#A8A8A8] pl-4 md:text-base leading-[25.6px] font-normal w-full">
                     {item.content}
                   </AccordionContent>
                 </AccordionItem>
