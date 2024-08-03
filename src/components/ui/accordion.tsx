@@ -26,7 +26,7 @@ const AccordionTrigger = React.forwardRef<
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <AccordionPrimitive.Header className="flex w-full">
+    <AccordionPrimitive.Header className="flex max-w-full">
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(

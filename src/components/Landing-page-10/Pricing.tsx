@@ -46,7 +46,7 @@ export default function Pricing() {
                   </div>
                   <Button1
                     fill={PricingPlan.title !== "PRO"}
-                    className="w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-gray-500 items-center"
+                    className="max-w-[114px] max-h-[44px] gap-[10px] rounded-[8px] py-[12px] px-[16px] bg-gray-500 items-center"
                   >
                     Buy Now
                     <FaArrowRight />

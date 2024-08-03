@@ -11,7 +11,7 @@ const Card = React.forwardRef<
       "rounded-2xl border bg-accent-foreground text-card-foreground shadow",
       horizontal ? "flex-row" : "flex-col",
       "flex", // Ensures the card uses flexbox
-      className
+      className,
     )}
     {...props}
   />
@@ -27,7 +27,7 @@ const CardHeader = React.forwardRef<
     className={cn(
       "flex flex-col space-y-1.5 p-6",
       horizontal ? "flex-row space-x-1.5 space-y-0" : "",
-      className
+      className,
     )}
     {...props}
   />
@@ -67,7 +67,7 @@ const CardContent = React.forwardRef<
     className={cn(
       "p-6 pt-0",
       horizontal ? "flex-row space-x-1.5 space-y-0" : "",
-      className
+      className,
     )}
     {...props}
   />
@@ -83,7 +83,7 @@ const CardFooter = React.forwardRef<
     className={cn(
       "flex items-center p-1 pt-0",
       horizontal ? "flex-row space-x-1.5 space-y-0" : "",
-      className
+      className,
     )}
     {...props}
   />

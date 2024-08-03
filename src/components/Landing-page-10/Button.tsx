@@ -21,7 +21,7 @@ function Button({ children, fill, size, className }: ButtonProps) {
           "px-6 h-11": size == "md",
           "md:h-[52px] md:px-8 h-10 px-6 justify-center md:rounded-3xl":
             size == "lg",
-        }
+        },
       )}
     >
       {children}
