@@ -11,8 +11,7 @@ const accordion = [
     content: (
       <>
         Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps
-        within <br />
-        days.
+        within <span>days.</span>
       </>
     ),
   },
@@ -21,8 +20,7 @@ const accordion = [
     content: (
       <>
         Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps
-        within <br />
-        days.
+        within <span>days.</span>
       </>
     ),
   },
@@ -31,7 +29,7 @@ const accordion = [
     content: (
       <>
         Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps
-        within <br /> days.
+        within <span> days.</span>
       </>
     ),
   },
@@ -40,7 +38,7 @@ const accordion = [
     content: (
       <>
         Highly modular NextJS AI Boilerplate that allows you to ship any AI Apps
-        within <br /> days.
+        within <span> days.</span>
       </>
     ),
   },
@@ -70,7 +68,7 @@ export default function FAQ() {
                   <AccordionTrigger className="flex font-medium text-base gap-4 max-w-full">
                     <span>{item.title}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#A8A8A8] text-base font-medium mx-6 md:w-[621px]">
+                  <AccordionContent className="flex flex-col text-[#A8A8A8] text-base font-medium mx-6 ">
                     {item.content}
                   </AccordionContent>
                 </AccordionItem>
