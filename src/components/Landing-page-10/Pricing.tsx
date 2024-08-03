@@ -76,7 +76,7 @@ export default function Pricing() {
         {PricingPro.map((PricingPlan: PricingProType) => (
           <div
             key={PricingPlan.title}
-            className="rounded-3xl py-8 pl-10 pricing-bg border border-[#2B2F45] flex flex-col gap-8 items-center md:flex-row md:max-w-lg md:max-h-72"
+            className="rounded-3xl py-8 md:pl-10 pricing-bg border border-[#2B2F45] flex flex-col gap-8 items-center md:flex-row md:max-w-lg md:max-h-72"
           >
             <div className="flex flex-col gap-6 justify-center p-0 items-center md:w-40">
               <div className="flex flex-col gap-2 items-center">
@@ -93,7 +93,7 @@ export default function Pricing() {
                 <FaArrowRight />
               </Button>
             </div>
-            <div className="flex flex-col flex-grow items-start gap-4 max-w-72">
+            <div className="grid grid-cols-1 gap-4">
               {PricingPlan.features.map((feat: string) => (
                 <div key={feat} className="flex items-start gap-2">
                   <Image src={tick} width={20} height={20} alt="icon" />

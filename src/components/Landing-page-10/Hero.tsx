@@ -25,7 +25,7 @@ export default function Hero() {
             <h1 className="text-center md:text-left font-semibold leading-10 text-3xl sm:text-4xl w-full h-auto tracking-normal text-[#FFFFFF]">
               Generate AI Apps with ease
             </h1>
-            <div className="text-center md:text-left text-[#D1D1D3] md:h-14 w-full md:w-[625px] tracking-normal leading-7 font-normal text-sm md:text-base">
+            <div className="text-center md:text-left text-[#D1D1D3] md:h-14 w-full md:w-[625px] leading-7 font-normal text-sm md:text-base">
               Highly modular NextJS AI Boilerplate that allows you to ship any
               AI Apps within{" "}
               <span className="inline md:block">
