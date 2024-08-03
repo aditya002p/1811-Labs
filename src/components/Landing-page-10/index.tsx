@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 export default function LandingPage10() {
   return (
-    <div className="bg-custom-gradient min-h-s text-white font-inter">
+    <div className="bg-custom-gradient text-white font-inter">
       <Hero />
       <FeaturedOn />
       <Features2 />

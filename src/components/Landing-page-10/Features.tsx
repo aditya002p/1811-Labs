@@ -24,11 +24,14 @@ const cardDetails = [
 
 export default function Features() {
   return (
-    <div className="flex flex-col py-32 px-4 md:px-0 items-center gap-24 ">
+    <div
+      id="features"
+      className="flex flex-col py-32 px-4 md:px-0 items-center gap-24 "
+    >
       <div className="flex flex-col items-center gap-4 max-w-2xl">
         <div className="max-w-64 max-h-10 rounded-3xl py-2 px-4 gap-3">
           <span className="text-[#227AFF] font-semibold leading-6 text-sm">
-            What can you do with builder kit
+            What can you do with builderkit
           </span>
         </div>
         <div className="flex flex-col text-center md:max-w-2xl gap-7 items-center">
@@ -69,7 +72,7 @@ export default function Features() {
               <span className="font-semibold text-xl tracking-tight text-white">
                 {card.title}
               </span>
-              <span className="font-normal -tracking-wide text-[#A8A8A8] text-base">
+              <span className="font-normal -tracking-normal text-[#A8A8A8] text-base leading-7">
                 {card.content}
               </span>
             </div>

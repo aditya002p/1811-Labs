@@ -53,12 +53,12 @@ export default function Navbar() {
           <div className="md:block hidden">
             <Button
               fill={false}
-              className="flex flex-row max-w-[80px] h-[32px] rounded-[24px] pt-[6px] pr-[10px] pb-[6px] pl-[10px] gap-[10px] bg-[#343854] text-[#FFFFFF]"
+              className="flex flex-row max-w-20 h-8 rounded-3xl py-2 px-3 gap-[10px] bg-[#343854] text-[#FFFFFF]"
             >
-              <span className="flex leading-5 font-normal text-[14px] tracking-[-0.04em] w-[38px] h-[20px]">
+              <span className="flex font-normal text-sm tracking-[-0.04em] w-9 h-5">
                 Signin
               </span>
-              <ArrowRightIcon className="w-[12px] h-[12px]" />
+              <ArrowRightIcon className="w-3 h-3" />
             </Button>
           </div>
         </div>

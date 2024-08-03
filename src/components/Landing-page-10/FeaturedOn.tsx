@@ -12,7 +12,7 @@ export default async function FeaturedOn() {
 
   return (
     <div className="flex justify-center flex-col items-center text-base gap-8 py-20 px-0">
-      <p className="w-80 h-6 font-medium text-center text-[#787878] text-[18px] leading-[21.78px] tracking-[-0.03em]">
+      <p className="max-w-80 max-h-6 font-medium text-center text-[#787878] text-lg tracking-[-0.03em]">
         More than 25,000 teams use Builderkit
       </p>
 
