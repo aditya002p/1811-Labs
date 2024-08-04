@@ -1,12 +1,14 @@
 export interface PricingPlan {
+  type: "Normal" | "Pro";
   title: string;
   price: string;
   features: string[];
   featuresNot?: string[];
 }
-export type PricingNormalType = PricingPlan;
-export const PricingNormal: PricingPlan[] = [
+
+export const PricingPlans: PricingPlan[] = [
   {
+    type: "Normal",
     title: "PRO",
     price: "$149",
     features: ["NextJS Boilerplate", "AI Modules", "5 Demo Apps"],
@@ -16,17 +18,8 @@ export const PricingNormal: PricingPlan[] = [
       "Privacy Policy & ToS",
     ],
   },
-];
-
-export interface PricingPlan {
-  title: string;
-  price: string;
-  features: string[];
-}
-
-export type PricingProType = PricingPlan;
-export const PricingPro: PricingPlan[] = [
   {
+    type: "Pro",
     title: "PRO",
     price: "$199",
     features: [

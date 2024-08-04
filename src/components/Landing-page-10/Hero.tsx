@@ -13,7 +13,7 @@ export default function Hero() {
       className="flex flex-col items-center pt-4 px-4 pb-0 md:px-0 "
     >
       <Navbar />
-      <div className="flex flex-col md:flex-row md:gap-10 pt-24 px-4 md:px-56 pb-24 md:h-[416px]">
+      <div className="flex flex-col md:flex-row md:gap-10 pt-24 px-4 md:px-56 pb-24 ">
         <div className="flex flex-col gap-8 items-center md:items-start justify-center self-stretch max-h-60">
           <div className="flex flex-col items-center md:items-start gap-4 md:max-w-2xl md:max-h-40">
             <div className="border border-[#222222] py-1.5 px-4 rounded-full gap-2 flex items-center">

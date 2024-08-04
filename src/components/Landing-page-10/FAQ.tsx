@@ -44,22 +44,22 @@ const accordion = [
   },
 ];
 
-export default function FAQ() {
+export default function Faq() {
   return (
-    <div
-      id="faq"
-      className="flex flex-col py-32 px-3 items-center w-full md:gap-2"
-    >
-      <div className="flex flex-col md:flex-row gap-20 md:w-[1080px] md:items-baseline">
-        <div className="flex flex-col gap-4 text-center md:text-start items-center md:items-start md:w-[334px]">
-          <span className="font-medium text-2xl md:text-[32px] -tracking-wider text-[#ffffff]">
+    <div className="flex justify-center">
+      <div
+        id="faq"
+        className="flex flex-col md:flex-row md:py-32 md:gap-20 gap-10 py-10 max-w-5xl"
+      >
+        <div className="flex flex-col gap-6 items-center mt-2">
+          <h1 className="font-medium text-2xl md:text-3xl">
             Frequently asked questions
-          </span>
-          <p className="text-[#A8A8A8] font-normal text-sm md:text-base tracking-wide">
+          </h1>
+          <p className="text-[#A8A8A8] px-10 md:px-0 leading-7 md:w-[334px]">
             Don't worry, we got you. Here are some answers for your questions.
           </p>
         </div>
-        <div className="flex flex-col items-start leading-8">
+        <div className="flex flex-col items-center leading-8">
           {accordion.map((item, index) => {
             return (
               <Accordion type="single" collapsible key={index}>

@@ -36,32 +36,31 @@ const cardDetails = [
 
 export default function Features2() {
   return (
-    <div className="flex flex-col py-16 md:py-28 items-center gap-10 md:gap-20 max-w-full filter-custom-drop-shadow">
-      <div className="grid grid-cols-1 gap-4 items-center max-w-2xl text-center">
-        <span className="text-blue-500 text-sm font-semibold leading-6">
-          What can you do with builderkit
-        </span>
-        <div className="flex flex-col gap-6 items-center md:max-w-2xl">
-          <div className="flex flex-col font-medium text-3xl md:text-4xl leading-9 md:leading-10 text-white tracking-tight">
-            Essentially, everything you need
-            <span>to ship your first AI App</span>
+    <div className="flex flex-col py-16 md:py-32 items-center gap-10 md:gap-20 ">
+      <div className="flex flex-col gap-7 items-center max-md:max-w-80 text-center">
+        <div className="flex flex-col gap-4 items-center">
+          <span className="text-blue-500 text-sm font-semibold leading-6">
+            What can you do with builderkit
+          </span>
+          <div className="flex flex-col gap-6 items-center md:max-w-2xl">
+            <h1 className="flex flex-col font-medium text-3xl md:text-4xl leading-9 md:leading-10 text-white tracking-tight">
+              Essentially, everything you need
+              <span>to ship your first AI App</span>
+            </h1>
           </div>
-          <p className="flex flex-col font-medium text-base md:text-lg text-[#A8A8A8] md:max-w-2xl">
-            Highly modular NextJS AI Boilerplate that allows you to ship any AI
-            Apps
-            <span>
-              within days. Save Hours of Effort and Use our robust Deployable
-              code.
-            </span>
-          </p>
         </div>
+        <p className="text-base md:text-lg text-[#A8A8A8] md:max-w-[642px] text-center">
+          Highly modular NextJS AI Boilerplate that allows you to ship any AI
+          Apps <br />
+          within days. Save Hours of Effort and Use our robust Deployable code.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-5xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl">
         {cardDetails.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col gap-6 p-6 bg-[#161823] rounded-3xl w-full h-auto items-start"
+            className="flex flex-col md:rounded-3xl rounded-lg shadow-md gap-2 bg-[#0f111a] md:p-6 p-4 w-80 items-start"
           >
             <div>
               <Image

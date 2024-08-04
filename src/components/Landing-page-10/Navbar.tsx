@@ -33,13 +33,13 @@ const navOptions = [
 
 export default function Navbar() {
   return (
-    <div className="md:max-w-[641.65px] max-h[57px] flex gap-3 justify-between items-center w-full border-b border-[#222222] pt[8px] pl-[8px] pb-[16px] pr-[8px]">
+    <div className="md:max-w-2xl max-h-14 flex gap-3 justify-between items-center w-full border-b border-[#222222] py-2 px-4">
       <Link href="https://www.builderkit.ai">
         <div className="flex items-center w-fit">
           <Image src="/lp10-logo.png" width={132} height={32} alt="logo" />
         </div>
       </Link>
-      <div className="flex items-center justify-center max-w-[374px] max-h-[32px] gap-[14px]">
+      <div className="flex items-center justify-center max-w-[374px] max-h-8 gap-3">
         <div className="md:flex hidden gap-6 font-medium">
           {navOptions.map((opt) => {
             return (
@@ -58,7 +58,7 @@ export default function Navbar() {
               <span className="flex font-normal text-sm tracking-[-0.04em] w-9 h-5">
                 Signin
               </span>
-              <ArrowRightIcon className="w-3 h-3" />
+              <ArrowRightIcon className="w-4 h-4" />
             </Button>
           </div>
         </div>
