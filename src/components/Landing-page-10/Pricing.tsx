@@ -22,11 +22,11 @@ export default function Pricing() {
             Start making smarter decisions, Choose a plan
           </span>
         </div>
-        <div className="flex gap-4 md:flex-row flex-col">
+        <div className="flex flex-col md:flex-row gap-4 ">
           {PricingPlans.map((plan) => (
             <div
               key={plan.title}
-              className={` ${plan.type === "Pro" ? "pricing-bg" : "bg-[#161823]"} border border-[#2B2F45] rounded-3xl flex gap-12 py-8 items-center md:flex-row flex-col w-full`}
+              className={` ${plan.type === "Pro" ? "pricing-bg" : "bg-[#161823]"} border border-[#2B2F45] rounded-3xl flex gap-12 px-1 py-8 items-center md:flex-row flex-col w-full`}
             >
               <div className="flex flex-col gap-6 items-center flex-1">
                 <div className="flex flex-col gap-2">
@@ -50,7 +50,7 @@ export default function Pricing() {
                   </Button>
                 )}
               </div>
-              <div className="flex flex-col gap-4 max-w-72 flex-1 pl-2 pr-1">
+              <div className="flex flex-col gap-4 max-w-80 flex-1 pl-2 pr-3">
                 {plan.features.map((feat) => (
                   <div key={feat} className="flex items-start gap-2">
                     <Image src={tick} width={20} height={20} alt="icon" />
